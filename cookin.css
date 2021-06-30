@@ -1,0 +1,129 @@
+* {
+	text-decoration: none;
+}
+body {
+	background-color: rgb(255,245,238);
+}
+.queen {
+	width: 200px;
+	height: 200px;
+}
+.queen img {
+	width: 150px;
+	height: 150px;
+	animation: rotation 2s infinite linear;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	padding-margin: 20px;
+}
+.box {
+	height: 400px;
+	width: 400px;
+	border: 5px solid white;
+	position: absolute;
+
+}
+
+.yellow {
+	background-color: #ff028d;
+	left: 80px;
+    top: 100px;
+    z-index: 1;
+}
+
+.yellow2 {
+	background-color: #ff028d;
+	right: 80px;
+    top: 100px;
+    z-index: 1;
+
+}
+
+
+.pink {
+	background-color: rgb(255,209,220);
+	left: 180px;
+    top: 200px;
+    z-index: 2;
+
+}
+.pink2 {
+	background-color: rgb(255,209,220);
+	right: 180px;
+    top: 200px;
+    z-index: 2;
+
+}
+
+
+.blue {
+	background-color: rgb(252,108,133);
+	left: 280px;
+    top: 300px;
+    z-index: 1;
+    animation: rotation 2s infinite linear;
+
+}
+
+.blue2 {
+	background-color: rgb(252,108,133);
+	right: 280px;
+    top: 300px;
+    z-index: 1;
+    animation: rotation 2s infinite linear;
+
+}
+
+.main {
+	height: 380px;
+	width: 380px;
+	box-shadow: 8px 8px rgb(255,245,238, .3);
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@media only screen and (max-width: 1363px) {
+  .main {
+    height: 280px;
+    width:  280px;
+  }
+ .box {
+	height: 300px;
+	width: 300px;
+	position: absolute;
+}
+}
+
+@media only screen and (max-width: 1175px) {
+  .main {
+    height: 180px;
+    width:  180px;
+  }
+ .box {
+	height: 200px;
+	width: 200px;
+	position: absolute;
+}
+}
+
+@media only screen and (max-width: 375px) {
+  .main {
+    height: 80px;
+    width:  80px;
+  }
+ .box {
+	height: 100px;
+	width: 100px;
+	position: absolute;
+}
+}
